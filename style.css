@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    align-items: center;
+    font-size: x-large;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Quizbg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.navbar{
+    background-color:darkgreen;
+    margin: 1rem;
+    width: 20rem;
+}
+
+.Box{
+    position: relative;
+    z-index: 1;
+    background-color:darkblue;
+    width: 30rem;
+    height: 35rem;
+
+}
+
+.question, .options{
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.quest-div{
+    padding: 1rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.btn{
+    height: 3rem;
+    font-size: large;
+}
+
+#next-btn, #prev-btn{
+    width: 6rem;
+    height: 3rem;
+    background: linear-gradient(to right, #9EFBD3, #57E9F2, #45D4FB);
+    transition: background 0.3s ease;
+    cursor: pointer;
+
+}
+
+.navbar, .question,.Box ,.btn, #next-btn ,#prev-btn{
+    border-radius: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    transition-delay: 130ms;
+}
